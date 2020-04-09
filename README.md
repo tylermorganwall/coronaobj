@@ -31,7 +31,7 @@ Diseases, NIAID), from the NIH 3D Print Exchange
 See the bottom of this README for the full description of the process
 NIAID used to create the model.
 
-The 3D model itself is licensed with CC SA. My alternations: I centered
+The 3D model itself is licensed with CC SA. My alterations: I centered
 and scaled the model down to fix in a unit box, reduced the floating
 point precision to ensure it remained under the 100MB limit to fit in a
 single Github repo, and finally cleaned the vertex colors so that there

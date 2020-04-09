@@ -1,0 +1,12 @@
+Package: coronaobj
+Type: Package
+Title: Customizable 3D Model of the SARS CoV2 Virion.
+Version: 0.1.0
+Author: Tyler Morgan-Wall
+Maintainer: Tyler Morgan-Wall <tylermw@gmail.com>
+Description: This package provides a cleaned-up 3D model of the SARS Cov2 (Coronavirus) virion. The user can customize the colors of the spike proteins and lipid layer, and write the resulting OBJ file to disk to be rendered by rayrender, or any other 3D rendering software.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: rayrender
+RoxygenNote: 7.0.2

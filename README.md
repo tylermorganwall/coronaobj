@@ -14,7 +14,7 @@ body) of the virus, the closed (inactive) spike protein, and the open
 
 The resulting OBJ file can either be exported and processed in a
 external renderer, or rendered directly in R with the
-[rayrender](www.rayrender.net) package, a pathtracer. The entire package
+[rayrender](https://www.rayrender.net) package, a pathtracer. The entire package
 (model included) is self-contained in the repo, and can be installed
 with the `remotes` package.
 
@@ -140,7 +140,7 @@ generate_ground(depth=-0.55,material = metal(color="darkred", fuzz=0.025)) %>%
 
 <img src="man/figures/README-example4-1.png" width="100%" />
 
-See the [rayrender](www.rayrender.net) documentation for more
+See the [rayrender](https://www.rayrender.net) documentation for more
 information on how to set up the scene, change camera settings, and add
 additional objects/lights.
 

@@ -18,7 +18,7 @@
 #' #Write a base version of the model and render it with rayrender, using vertex colors.
 #' \donttest{
 #'
-#' write_covid_obj("defaults.obj")
+#' write_corona_obj("defaults.obj")
 #'
 #' #Render the model:
 #' obj_model("defaults.obj", vertex_colors = TRUE) %>%
@@ -29,7 +29,7 @@
 #'
 #' #Now write a custom version, recreating the "standard" grey and red COVID-19 visualization.
 #'
-#' write_covid_obj("standard.obj",
+#' write_corona_obj("standard.obj",
 #'                 color_membrane = "#a1cdf0",
 #'                 color_spike = "#3432cf",
 #'                 color_open_spike = "#d92bc5")
@@ -41,7 +41,7 @@
 #'   render_scene(parallel=TRUE, samples = 100, fov = 7, min_variance=0, focal_distance = 9.6,
 #'                width=800,height=800)
 #' }
-write_covid_obj = function(filename = "covidcustom.obj",
+write_corona_obj = function(filename = "covidcustom.obj",
                            color_membrane = "#a1cdf0",
                            color_spike = "#3432cf",
                            color_open_spike = "#d92bc5") {

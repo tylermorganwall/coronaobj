@@ -6,7 +6,7 @@
 The `coronaobj` package is a simple, single-function R package to
 generate customized, scientifically accurate 3D models of SARS CoV-2
 (the virus that causes the coronavirus disease, COVID-19). The function
-`write_covid_obj()` writes out a Wavefront OBJ 3D model with vertex
+`write_corona_obj()` writes out a Wavefront OBJ 3D model with vertex
 colors, and the user can specify their own color scheme for the virus.
 Specifically, the user can specify a color for the lipid membrane (main
 body) of the virus, the closed (inactive) spike protein, and the open
@@ -60,7 +60,7 @@ remotes::install_packages_github("tylermorganwall/rayrender")
 
 ## Examples
 
-We load the library and use the `write_covid_obj()` function to create
+We load the library and use the `write_corona_obj()` function to create
 an OBJ file with vertex colors in our directory. We will render it with
 rayrender, adding some lights above and to the left and right of the
 model.
@@ -69,7 +69,7 @@ model.
 library(coronaobj)
 library(rayrender)
 
-write_covid_obj("defaults.obj")
+write_corona_obj("defaults.obj")
 #> [1] "defaults.obj"
 
 obj_model("defaults.obj", vertex_colors = TRUE) %>%
@@ -85,7 +85,7 @@ We can customize the color by passing in colors as well:
 
 ``` r
 
-write_covid_obj("custom_color.obj", color_membrane = "cadetblue1",
+write_corona_obj("custom_color.obj", color_membrane = "cadetblue1",
                 color_spike = "steelblue", color_open_spike = "deepskyblue1")
 #> [1] "custom_color.obj"
 
@@ -103,7 +103,7 @@ We can also change the lighting and aperture using rayrender:
 
 ``` r
 
-write_covid_obj("custom_color2.obj", color_membrane = "#a1cdf0",
+write_corona_obj("custom_color2.obj", color_membrane = "#a1cdf0",
                 color_spike = "#3432cf", color_open_spike = "#d92bc5")
 #> [1] "custom_color2.obj"
 
@@ -122,7 +122,7 @@ surface:
 
 ``` r
 
-write_covid_obj("custom_color3.obj", color_membrane = "#ed645c",
+write_corona_obj("custom_color3.obj", color_membrane = "#ed645c",
                 color_spike = "#a32b24", color_open_spike = "#c91271")
 #> [1] "custom_color3.obj"
 

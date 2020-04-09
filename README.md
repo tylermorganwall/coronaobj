@@ -47,7 +47,7 @@ You can install `coronaobj` from Github, using the following code.
 ``` r
 
 install.packages("remotes")
-remotes::install_packages_github("tylermorganwall/coronaobj")
+remotes::install_github("tylermorganwall/coronaobj")
 ```
 
 And if you want to render images of the model directly in R, install the
@@ -55,7 +55,7 @@ latest version of the rayrender package as well.
 
 ``` r
 
-remotes::install_packages_github("tylermorganwall/rayrender")
+remotes::install_github("tylermorganwall/rayrender")
 ```
 
 ## Examples
